@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <title>Document</title>
+    <script>
+        function submit1()
+        {
+            var v1=document.getElementById("mark1").value;
+            var v2=document.getElementById("mark2").value;
+            var v3=document.getElementById("mark3").value;
+            var v4=document.getElementById("mark4").value;
+            var v5=document.getElementById("mark5").value;
+            var v6=document.getElementById("mark6").value;
+            var v7=document.getElementById("mark7").value;
+            var sum=parseInt(v1)+parseInt(v2)+parseInt(v3)+parseInt(v4)+parseInt(v5)+parseInt(v6);
+            var avg=sum/6;
+            document.getElementById("result").innerHTML="Average of marks:" + avg;
+            var d=[avg]/10
+            var x=[parseInt(v7)+d]/2
+            alert(x)
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid"">
+        <center><h1>CGPA CALCULATOR</h1></center>
+        <fieldset>
+    <form id="form1">
+        DAA
+        <input type="text" name="mark1" id="mark1"/>
+        PS
+        <input type="text" name="mark2" id="mark2"/>
+        PC
+        <input type="text" name="mark3" id="mark3"/>
+        WT 
+        <input type="text" name="mark4" id="mark4"/>
+        PYF
+        <input type="text" name="mark5" id="mark5"/>
+        DBMS
+        <input type="text" name="mark6" id="mark6"/>
+        <br><Br> 
+        CGPA
+        <input type="text" name="mark7" id="mark7"/> <br><Br>
+        <button type="button" onclick="submit1()">submit</button><br>
+        <p id="result"></p>  
+       
+    </form>
+</fieldset>
+</body>
+</html>
